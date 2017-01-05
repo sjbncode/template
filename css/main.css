@@ -1,3 +1,10 @@
+html{
+	box-sizing: border-box;
+}
+*,*:before,*:after{
+	box-sizing: inherit;
+}
+
 body {
   background-image: url(../img/bg5.jpg);
   background-attachment: fixed;
@@ -85,12 +92,78 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.experience ul{
+	list-style: none;
+}
+.experience ul li{
+	display: inline;
+}
+.experience ul li img{
+	float: left;
+	width: 180px;
+}
+.experience ul li article{
+	overflow: hidden;
+}
 
 
+.contact ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.contact ul li{
+	width: 24%;
+	display: inline-block;
+	padding-top:150px;
+	background-repeat:no-repeat;
+	background-position: center top;
+}
+.contact ul li.fb{
+	background-image: url(../img/fb-icon.png);
+}
+.contact ul li.email{
+	background-image: url(../img/email-icon.png);
+}
+.contact ul li.linkedin{
+	background-image: url(../img/linkedin-icon.png);
+}
+.contact ul li.twitter{
+	background-image: url(../img/twitter-icon.png);
+}
+
+.contact .form *{
+	display: block;
+	width: 45%;
+	margin: 0 auto;
+}
+.contact input,.contact textarea{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.contact button{
+	border:none;
+	border-radius: 9999px;
+	background-color: #ffd524;
+	cursor: pointer;
+	text-shadow:  0 1px 1px rgba(0,0,0,0.2);
+	color: #fff;
+	box-shadow: 0 3px 0 #daae1d;
+
+}
+
+
+.photos ul{
+	list-style: none;
+	padding: 0
+}
+.photos ul li{
+	display: inline;
+}
 
 .centered-image{
 	display: block;
-	width: 25%,
+	width: 25%;
 	margin：0 auto
 }
 .centered-container{
