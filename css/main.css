@@ -1,0 +1,98 @@
+body {
+  background-image: url(../img/bg5.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  font-family: 'Open Sans','helvetica',arial,sans-serif;
+  font-weight: 300;
+  color: #62686f;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-weight: 300;
+}
+.container{
+	width: 960px;
+	margin:0 auto;
+}
+.header-container{
+	text-align: center;
+	margin-top: 200px;
+	background-image: url(../img/banner.jpg);
+}
+.avatar{
+	margin-top: -70px;
+	border: 2px solid white;
+
+	border-radius:100%;
+	box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+}
+
+
+.main-nav{
+	background-color: #333;
+	text-align: center;
+}
+.main-nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.main-nav ul li{
+	display: inline-block;
+	margin:15px 10px;
+}
+.main-nav ul li a{
+	color: #fff;	
+	text-decoration: none;
+}
+.main-nav ul li a:hover{	
+	text-decoration: underline;
+}
+
+
+.section{
+	text-align: center;
+	background-color: #fff;
+}
+.section header{
+	margin-bottom: 40px
+}
+.section header h2:after{
+	content: "";
+	display: inline;
+	border-bottom: 3px solid black
+}
+.skill ul{
+	list-style: none;
+}
+.skill li{
+	width: 33%;
+	display: inline-block;
+	padding-top: 100px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.skill .code {
+  background-image: url(../img/skill-code.png);
+}
+.skill .design {
+  background-image: url(../img/skill-design.png);
+}
+.skill .product {
+  background-image: url(../img/skill-product.png);
+}
+
+
+
+
+
+.centered-image{
+	display: block;
+	width: 25%,
+	margin：0 auto
+}
+.centered-container{
+	text-align: center;
+}
