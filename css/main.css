@@ -4,7 +4,9 @@ html{
 *,*:before,*:after{
 	box-sizing: inherit;
 }
-
+nav,section{
+	margin-top: -19px;
+}
 body {
   background-image: url(../img/bg5.jpg);
   background-attachment: fixed;
