@@ -107,6 +107,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+.photos ul{
+	list-style: none;
+	padding: 0
+}
+.photos ul li{
+	display: inline;
+}
+
 .contact ul{
 	list-style: none;
 	margin: 0;
@@ -132,16 +141,25 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(../img/twitter-icon.png);
 }
 
-.contact .form *{
-	display: block;
-	width: 45%;
-	margin: 0 auto;
+.form-container{
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
-.contact input,.contact textarea{
+.form-container label{
+	position: absolute;
+	top: 0;
+	right:60%;
+}
+.form-container label{
+	padding: 8px
+}
+.form-container input,.form-container textarea{
 	border: 1px solid #ccc;
 	border-radius: 4px;
+	padding: 8px;
 }
-.contact button{
+.form button{
 	border:none;
 	border-radius: 9999px;
 	background-color: #ffd524;
@@ -149,17 +167,52 @@ h1, h2, h3, h4, h5, h6 {
 	text-shadow:  0 1px 1px rgba(0,0,0,0.2);
 	color: #fff;
 	box-shadow: 0 3px 0 #daae1d;
-
+	padding:8px;
 }
 
 
-.photos ul{
-	list-style: none;
-	padding: 0
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
 }
-.photos ul li{
-	display: inline;
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.container{
+		width: 100%
+	}
 }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main-nav ul li{
+		display: block;
+	}
+	.skill li{
+		width: inherit;
+	}
+	.contact ul li{
+	width: 49%;
+	}
+	.form-container label{
+		position: static;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 .centered-image{
 	display: block;
